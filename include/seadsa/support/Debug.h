@@ -2,6 +2,9 @@
 #include <string>
 #include <set>
 
+// debug-log
+#define DOG(CODE) LOG(DEBUG_TYPE, CODE)
+// named-log
 #define LOG(TAG,CODE) \
   do { if(::seadsa::SeaDsaLog.count(TAG) > 0) {CODE;} else {;} } while(false)
 
